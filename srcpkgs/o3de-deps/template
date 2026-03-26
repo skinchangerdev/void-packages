@@ -1,0 +1,32 @@
+# Template file for 'o3de-deps'
+pkgname=o3de-deps
+version=2510.2
+revision=1
+metapackage=yes
+# why isn't there a libxkbcommon-x11-devel pkg?
+# based on https://docs.o3de.org/docs/welcome-guide/requirements/#linux
+depends="
+    glu-devel
+    libXrandr-devel
+    libXinerama-devel
+    libXi-devel
+    libXfixes-devel
+    libxkbfile-devel
+    xcb-util-image-devel
+    xcb-util-keysyms-devel
+    libxkbcommon-devel
+    libxkbcommon-x11
+    fontconfig-devel
+    libcurl-devel
+    openssl-devel
+    libpcre2
+    zlib-devel
+    mesa
+    libssl3
+    libunwind-devel
+    libzstd-devel
+    xxd"
+short_desc="Metapackage for o3de build dependencies"
+homepage="https://o3de.org/"
+maintainer="SkinChangerDev <git@skinchanger.dev>"
+license="Apache-2.0"
